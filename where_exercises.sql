@@ -3,7 +3,7 @@ USE employees;
 -- Find all employees with first names 'Irena', 'Vidya', or 'Maya' — 709 rows (Hint: Use IN).
 SELECT *
 FROM employees
-WHERE first_name IN ('Irena', 'Vidya','Maya');
+WHERE first_name IN('Irena', 'Vidya','Maya');
 
 -- Find all employees whose last name starts with 'E' — 7,330 rows.
 SELECT *
@@ -20,7 +20,7 @@ BETWEEN '1990-01-01' AND '1999-12-31';
 
 SELECT *
 FROM employees
-WHERE birthday_date LIKE '%-12-25';
+WHERE birth_date LIKE '%-12-25';
 
 -- Find all employees with a 'q' in their last name — 1,873 rows.
 SELECT *
@@ -38,8 +38,8 @@ WHERE first_name = 'Irena'
 SELECT *
 FROM employees
 WHERE (first_name = 'Irena'
- OR first_name = 'Vidya'
- OR first_name = 'Maya')
+        OR first_name = 'Vidya'
+        OR first_name = 'Maya')
  AND gender = 'M';
 
 --  Find all employees whose last name starts or ends with 'E' — 30,723 rows.
